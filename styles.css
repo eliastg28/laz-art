@@ -16,12 +16,23 @@ header{
 }
 
 .card{
-    margin: 4% 0;
+    margin: 2% 4%;
+    display: inline-block;
+    
+}
+
+.horizontal{
+    height: 250px;
+}
+
+.vertical{
+    height: 450px;
 }
 
 footer{
     display: flex;
     justify-content: center;
-    margin: -2% 0 2% 0;
+    margin: 2% 0 0 0;
     color: white;
+    background-color: black;
 }
