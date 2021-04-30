@@ -2,11 +2,23 @@ body{
     background-color: #212529;
 }
 
+
+h3{
+	color: white;
+	padding-top: 60px;
+}
+
+
 .navbar{
+	position: fixed;
+	z-index: 100;
+	width: 100%;
     padding: 10px;
+	margin-top: -30px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, rgb(0, 81, 255) 0%, rgb(255, 0, 0) 100%)1;
+	
 }
 
 footer{
@@ -34,7 +46,7 @@ footer{
 
 .full-width {
 	max-width: 1006px;
-	margin: 20px auto;
+	margin: 20px auto 20px auto;
 	display: flex;
 }
 
@@ -67,7 +79,7 @@ img{
 .bg-vertical {
 	display: block;
 	overflow: hidden;
-	max-height: 430px;
+	max-height: 400px;
 	max-width: 392px;
 	background: rgb(24, 25, 44);
 }
@@ -130,6 +142,16 @@ button{
 	
 	}
 
+	.bg-vertical {
+		max-height: 500px;
+		max-width: 400px;
+	}
+
+	.bg-horizontal {
+		max-height: 250px;
+		max-width: 400px;
+	}
+
 }
 
 
@@ -150,7 +172,7 @@ button{
 	}
 	
 	.bg-vertical {
-		max-height: 700px;
+		max-height: 580px;
 		max-width: 450px;
 	}
 
@@ -177,7 +199,7 @@ button{
 	}
 
 	.bg-vertical {
-		max-height: 700px;
+		max-height: 750px;
 		max-width: 550px;
 	}
 
@@ -204,6 +226,7 @@ button{
 		margin: 5px;
 	
 	}
+	
 
 }
 
@@ -222,5 +245,6 @@ button{
 		margin: 5px;
 	
 	}
+
 
 }
