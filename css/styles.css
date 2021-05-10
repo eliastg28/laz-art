@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0; 
     padding: 0;
@@ -5,82 +6,91 @@
 }
 
 body{
-	font-family: 'Raleway', sans-serif;
+    background: rgb(7, 6, 6);
 }
+/* End Of General Styles */
 
+
+/* Header Styles */
 header{
-    background: -webkit-linear-gradient(left, rgba(13, 58, 156, 0.911) 0%, black 50%, rgba(128, 0, 128, 0.911) 100%);
-    text-align: center;     
+    background: var(--degraded);
+    text-align: center;   
 }
 
-header img{
+header .logo{
+    user-select: none;
     animation-name: logo;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    width: 250px;
+    height: auto;
 }
+/* End Of Header Styles */
 
-article{
-    background: rgb(7, 6, 6);
-}
 
-.titulo {
+/* Article Styles */
+article .title {
+    user-select: none;
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
     margin: 32px 0 -5px 0;
-    color: #fff;
+    color: white;
 }
 
-.carousel{
-    min-height: 360px;
+article .carousel{
+    min-height: var(--size-card);
 }
 
-
-.carousel .carousel-item{
+article .carousel .carousel-item{
     user-select: none;
-    width: 360px;
-    height: 360px;
+    width: var(--size-card);
+    height: var(--size-card);
 }
 
-.carousel .carousel-item img{
+article .carousel .carousel-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+/* End Article Styles */
 
+
+/* Styles Of Carousel Indicators  */
 .carousel .indicators .indicator-item{
     border-radius: 0;
     transform: rotate(45deg);
     margin: 0 8px;
-    background: #36221c;
+    background: black;
+    border: 1px solid white;
 }
+/* Styles Of Carousel Indicators  */
 
-.logo{
-    width: 250px;
-    height: auto;
-}
 
+/* Styles Footer */
 footer{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: -webkit-linear-gradient(left, rgba(13, 58, 156, 0.733) 0%, black 50%, rgba(128, 0, 128, 0.733) 100%);
+    background: var(--degraded);
 }
 
-.social{
+footer .social{
     width: 400px;
     display: flex;
     justify-content: center;
 }
 
-.social__icon{
+footer .social .social-icon{
     width: 30px;
     margin: 10px 10px 5px 10px;
 }
+/* End Of Styles Footer */
 
 
+/* Logo animation */
 @keyframes logo{
     0%{
         
@@ -96,4 +106,4 @@ footer{
         transform: translateX(0px);
     }
 }
-
+/* End Of Logo animation */

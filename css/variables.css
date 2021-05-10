@@ -1,0 +1,4 @@
+:root{
+    --degraded : -webkit-linear-gradient(left, rgba(13, 58, 156, 0.911) 0%, black 50%, rgba(128, 0, 128, 0.911) 100%);
+    --size-card : 360px
+}
